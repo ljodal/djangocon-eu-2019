@@ -1,0 +1,10 @@
+version: '3'
+services:
+    postgres:
+        image: postgres:11-alpine
+        environment:
+            - POSTGRES_USER=djangocon
+            - POSTGRES_PASSWORD=djangocon
+            - POSTGRES_DB=djangocon
+        ports:
+            - '5432:5432'
